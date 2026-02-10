@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cc.chensoul</groupId>
+    <artifactId>spring-ai-mcp-samples</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>spring-ai-mcp-samples</name>
+
+    <modules>
+        <module>mcp-server-stdio</module>
+        <module>mcp-client-stdio</module>
+        <module>mcp-server-webflux</module>
+        <module>mcp-client-webflux</module>
+        <module>mcp-server-annotation</module>
+        <module>mcp-server-api-key</module>
+        <module>mcp-client-api-key</module>
+    </modules>
+
+</project>
