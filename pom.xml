@@ -17,6 +17,8 @@
         <module>brave-client-stdio</module>
         <module>brave-client-webflux</module>
 
+        <module>sqlite-client-stdio</module>
+
         <module>mcp-annotation-server</module>
         <module>mcp-annotation-client</module>
 
