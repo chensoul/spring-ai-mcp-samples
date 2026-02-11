@@ -11,13 +11,25 @@
     <name>spring-ai-mcp-samples</name>
 
     <modules>
-        <module>mcp-server-stdio</module>
-        <module>mcp-client-stdio</module>
-        <module>mcp-server-webflux</module>
-        <module>mcp-client-webflux</module>
-        <module>mcp-server-annotation</module>
-        <module>mcp-server-api-key</module>
-        <module>mcp-client-api-key</module>
+        <module>brave-client-docker-mcp-gateway</module>
+        <module>brave-client-stdio-json-config</module>
+        <module>brave-client-stdio-programmatic-config</module>
+        <module>brave-client-stdio</module>
+        <module>brave-client-webflux</module>
+
+        <module>mcp-annotation-server</module>
+        <module>mcp-annotation-client</module>
+
+        <module>weather-server-webmvc</module>
+        <module>weather-server-webflux</module>
+        <module>weather-server-stdio</module>
+        <module>weather-server-webmvc-manual</module>
+
+        <module>weather-client-webflux</module>
+        <module>weather-client-stdio</module>
+
+        <module>mcp-api-key-server</module>
+        <module>mcp-api-key-client</module>
     </modules>
 
 </project>
