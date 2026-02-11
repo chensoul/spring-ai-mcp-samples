@@ -5,6 +5,8 @@ import io.modelcontextprotocol.client.McpSyncClient;
 import io.modelcontextprotocol.client.transport.ServerParameters;
 import io.modelcontextprotocol.client.transport.StdioClientTransport;
 import io.modelcontextprotocol.json.McpJsonMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.mcp.SyncMcpToolCallbackProvider;
 import org.springframework.boot.CommandLineRunner;
@@ -19,6 +21,8 @@ import java.util.List;
 
 @SpringBootApplication
 public class SqliteClientStdioApplication {
+    private static final Logger log = LoggerFactory.getLogger(SqliteClientStdioApplication.class);
+
     public static void main(String[] args) {
         SpringApplication.run(SqliteClientStdioApplication.class, args);
     }
@@ -62,9 +66,12 @@ public class SqliteClientStdioApplication {
     @Bean(destroyMethod = "close")
     public McpSyncClient mcpClient() {
 
+        String dbPath = getDbPath();
+
+        log.info("sqlite db path: {}", dbPath);
+
         var stdioParams = ServerParameters.builder("uvx")
-                .args("mcp-server-sqlite", "--db-path",
-                        getDbPath())
+                .args("mcp-server-sqlite", "--db-path", dbPath)
                 .build();
 
         var mcpClient = McpClient.sync(new StdioClientTransport(stdioParams, McpJsonMapper.createDefault()))
@@ -79,7 +86,7 @@ public class SqliteClientStdioApplication {
     }
 
     private static String getDbPath() {
-        return Paths.get(System.getProperty("user.dir"), "test.db").toString();
+        return Paths.get(System.getProperty("user.dir"), "sqlite-client-stdio", "test.db").toString();
     }
 
 }
