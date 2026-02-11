@@ -21,11 +21,11 @@ import java.time.Duration;
 import java.util.List;
 
 @SpringBootApplication
-public class BraveClientStdioProgrammaticConfigApplication {
-    private static final Logger log = LoggerFactory.getLogger(BraveClientStdioProgrammaticConfigApplication.class);
+public class BraveClientStdioManualApplication {
+    private static final Logger log = LoggerFactory.getLogger(BraveClientStdioManualApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(BraveClientStdioProgrammaticConfigApplication.class, args);
+        SpringApplication.run(BraveClientStdioManualApplication.class, args);
     }
 
     @Bean

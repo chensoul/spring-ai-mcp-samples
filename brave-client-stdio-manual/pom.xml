@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cc.chensoul</groupId>
-    <artifactId>brave-client-stdio-programmatic-config</artifactId>
+    <artifactId>brave-client-stdio-manual</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>brave-client-stdio-programmatic-config</name>
 

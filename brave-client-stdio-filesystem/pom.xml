@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cc.chensoul</groupId>
-    <artifactId>brave-client-stdio-json-config</artifactId>
+    <artifactId>brave-client-stdio-filesystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>brave-mcp-server-config</name>
 

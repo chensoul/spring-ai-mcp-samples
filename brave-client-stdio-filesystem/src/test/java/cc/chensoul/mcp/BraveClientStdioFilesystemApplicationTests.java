@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BraveClientStdioProgrammaticConfigApplicationTests {
+class BraveClientStdioFilesystemApplicationTests {
 
 	@Test
 	void contextLoads() {

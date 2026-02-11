@@ -11,11 +11,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class BraveClientStdioJsonConfigApplication {
-    private static final Logger log = LoggerFactory.getLogger(BraveClientStdioJsonConfigApplication.class);
+public class BraveClientStdioFilesystemApplication {
+    private static final Logger log = LoggerFactory.getLogger(BraveClientStdioFilesystemApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(BraveClientStdioJsonConfigApplication.class, args);
+        SpringApplication.run(BraveClientStdioFilesystemApplication.class, args);
     }
 
     @Bean
